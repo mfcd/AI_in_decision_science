@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Downloaded/generated data (regenerate via download_stock_prices.py / fetch_metadata.py)
+stock_data/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
