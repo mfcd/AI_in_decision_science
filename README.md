@@ -9,7 +9,10 @@ Markowitz mean-variance portfolio optimization example.
 
 - [portfolio_optimization.ipynb](portfolio_optimization.ipynb) — loads historical
   adjusted close prices, solves a minimum-variance allocation with Pyomo/HiGHS
-  for a target return, and plots the resulting allocation by stock and by sector.
+  for a target return, plots the resulting allocation by stock and by sector, and
+  uses Z3 to check the Pyomo model's constraints against a business rule
+  (no single stock over 10%) that isn't actually encoded in the model, finding a
+  satisfying counterexample that violates it.
 - [download_stock_prices.py](download_stock_prices.py) — downloads historical
   price data into `stock_data/`.
 - [fetch_metadata.py](fetch_metadata.py) — fetches ticker metadata (e.g. sector)
