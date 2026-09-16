@@ -15,7 +15,8 @@ dependencies = [
     "pyomo (>=6.10.1,<7.0.0)",
     "highspy (>=1.15.1,<2.0.0)",
     "plotly (>=7.1.0,<8.0.0)",
-    "nbformat (>=5.11.1,<6.0.0)"
+    "nbformat (>=5.11.1,<6.0.0)",
+    "z3-solver (>=5.1.0.0,<6.0.0.0)"
 ]
 
 
@@ -28,5 +29,6 @@ build-backend = "poetry.core.masonry.api"
 
 [dependency-groups]
 dev = [
-    "ipykernel (>=7.3.0,<8.0.0)"
+    "ipykernel (>=7.3.0,<8.0.0)",
+    "nbconvert (>=7.17.1,<8.0.0)"
 ]
